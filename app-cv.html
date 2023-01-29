@@ -1,0 +1,173 @@
+<template id="app-cv">
+
+    <style>
+        main > section > header > aside > section > h2::before {
+            height: .75mm;
+            width: .75cm;
+            content: ' ';
+            display: block;
+            background: black;
+            position: absolute;
+            bottom: -1.5mm;
+            left: 0;
+        }
+
+        .chevroned::before {
+            content: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbDpzcGFjZT0icHJlc2VydmUiIHZpZXdCb3g9IjAgMCAxODUuMyAxODUuMyI+PHBhdGggZmlsbD0iIzAxMDAwMiIgZD0iTTUxLjcgMTg1LjNhMTAuNyAxMC43IDAgMCAxLTcuNi0xOC4zbDc0LjQtNzQuM0w0NCAxOC4zQTEwLjcgMTAuNyAwIDEgMSA1OS4zIDMuMWw4MiA4MmM0LjEgNC4yIDQuMSAxMSAwIDE1LjJsLTgyIDgxLjljLTIuMSAyLTQuOCAzLjEtNy42IDMuMXoiLz48L3N2Zz4=');
+            height: 2mm;
+            width: 2mm;
+            display: inline-block;
+            margin-inline-end: 1mm;
+            position: absolute;
+            transform: translate(-5mm, -.25mm);
+        }
+    </style>
+
+    <main class="
+    --padding-inline-[13mm] --padding-block-[16mm]
+    --width-[210mm] --height-[297mm]
+    
+    font-family-[Montserrat, sans-serif] font-weight-[thin]
+
+    display-[grid] place-content-[center]
+
+    [ul]:{list-style-[none] padding-[0] margin-[0]}
+
+    [h1,h2,h3,h4]:{text-transform-[uppercase]}
+    [h1,h2,h3,h4,h5]:{font-weight-[bold] line-height-[1.1]}
+    [h1,h2,h3,h4,h5,p]:{padding-[0] margin-[0]}
+
+    [h1]:{font-size-[24pt] letter-spacing-[-0.05em]}
+    [h2]:{font-size-[16pt] letter-spacing-[-0.05em]}
+    [h3]:{font-size-[11pt] letter-spacing-[-0.025em]}
+    [h4]:{font-size-[11pt] letter-spacing-[-0.05em]}
+
+    [a[href]]:{color-[inherit] text-decoration-[none] font-weight-[600]}
+
+    [> section]:{ // Style pour une page
+        width-[calc(var(--width) - var(--padding-inline) * 2)]
+        height-[calc(var(--height) - var(--padding-block) * 2)]
+        box-shadow-[0 0 0.5rem rgba(0,0,0,0.5)]
+        border-[1px solid rgba(0,0,0,0.25)]
+        padding-[var(--padding-block) var(--padding-inline)]
+    }
+
+    [@current > section > header]:{ // Style pour l'entête
+        margin-bottom-[3mm]
+    }
+
+    [@current > section > header > aside]:{ // Style pour l'entête
+        margin-block-[5mm]
+    }
+
+    [li p:last-child]:{font-size-[9pt]}
+    [li p:not(:last-child)]:{font-size-[8pt] line-height-[1.2] text-align-[justify] font-style-[italic]}
+    ">
+        <section class="
+        display-[grid] grid-template-columns-[1fr 2fr] row-gap-[5mm] column-gap-[10mm] grid-template-rows-[auto 1fr]
+        [h2]:{margin-bottom-[3mm]}
+        [:not(header) :where(h3,h4) > span]:{font-weight-[normal] font-size-[7pt]}
+        [header a > h3]:{font-weight-[bold] font-size-[11pt]}
+        [header a > h3 span]:{font-weight-[normal] font-size-[11pt]}
+        ">
+            <header class="grid-column-[1 / -1]">
+                <section class="display-[grid] grid-template-columns-[max-content auto] column-gap-[5mm]">
+                    <aside class="
+                    width-[3cm] height-[3cm] overflow-[hidden] border-[1px solid black] border-radius-[50%]
+                    [img]:{width-[100%] height-[100%] object-fit-[cover] object-position-[center]}
+                    " data-slot="avatar">
+                    </aside>
+                    <section class="display-[grid] grid-template-columns-[auto] row-gap-[1mm]">
+                        <h1 data-slot="nom">JOHN DOE</h1>
+                        <p data-slot="job" class="text-transform-[uppercase] font-weight-[bold]">Développeur Fullstack</p>
+                        <p>
+                            <span data-slot="age"></span>,
+                            <span data-slot="adresse"></span>
+                        </p>
+                    </section>
+                </section>
+        
+                <aside class="
+                display-[flex]
+                [> section]:{display-[flex] flex-direction-[column] justify-content-[space-between]}
+                [section > h2]:{position-[relative] font-size-[14pt] margin-bottom-[3mm]}
+                [section > ul]:{font-size-[11pt] display-[flex] flex-direction-[column] row-gap-[1mm]}
+                [> section:not(:last-child)]:{border-right-[.5mm solid black] padding-right-[5mm]}
+                [> section:not(:first-child)]:{padding-left-[5mm]}
+                ">
+                    <section>
+                        <h2>Contact</h2>
+                        <ul>
+                            <li data-slot="contact.telephone"></li>
+                            <li data-slot="contact.email"></li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h2>Langues</h2>
+                        <ul class="[span]:font-weight-[bold]" data-slot="langues"></ul>
+                    </section>
+                    <section class="padding-block-end-[.2mm]">
+                        <h2>Réseaux sociaux</h2>
+                        <ul class="row-gap-[1.5mm] [h3]:text-transform-[none]" data-slot="reseaux-sociaux"></ul>
+                    </section>
+                </aside>
+            </header>
+        
+            <section>
+                <section>
+                    <h2>Formations</h2>
+                    <ul class="
+                    display-[grid] grid-template-columns-[1fr] gap-[5mm]
+                    [ul]:{margin-left-[4mm] display-[grid] grid-template-columns-[1fr] gap-[4mm]}
+                    [li > ul]:margin-top-[1mm]
+                    [li > ul > li]:{margin-left-[4mm] display-[grid] grid-template-columns-[1fr] gap-[1mm]}
+                    [p:last-child]:{margin-left-[5mm] font-weight-[600]}
+                    " data-slot="formations"></ul>
+                </section>
+            
+                <aside>
+                    <!-- 
+                        TODO : 
+                        - ajouter "Visite mon profil <social-name>"
+                        - suivi du qr code menant sur <social-link>
+                    -->
+                </aside>
+            </section>
+        
+            <section class="
+            display-[grid] grid-template-columns-[1fr] gap-[5mm] grid-template-rows-[repeat(3,max-content)]
+            ">
+                <section>
+                    <h2>Expériences</h2>
+                    <ul class="
+                    display-[grid] grid-template-columns-[1fr] gap-[5mm]
+                    [h4 + ul]:{margin-top-[3mm] display-[grid] grid-template-columns-[1fr] gap-[2mm]}
+                    [li li li]:{font-size-[9pt] line-height-[1.1]}
+                    [h5]:{margin-left-[5mm]}
+                    [h5 + ul]:{margin-left-[10mm]}
+                    " data-slot="experiences"></ul>
+                </section>
+            
+                <section>
+                    <h2>Compétences</h2>
+                    <ul class="
+                    display-[grid] grid-template-columns-[repeat(3,1fr)] row-gap-[2mm] column-gap-[3mm]
+                    [h3]:{border-left-[.5mm solid black] padding-inline-start-[1mm] margin-bottom-[1mm]}
+                    [h3 + p]:{line-height-[1.1]}
+                    " data-slot="competences"></ul>
+                </section>
+            
+                <section class="
+                [ul > li]:{display-[grid] grid-template-columns-[max-content auto] column-gap-[4pt] align-items-[center]}
+                ">
+                    <h2>Centres d'intérêt</h2>
+                    <ul data-slot="hobbies" class="
+                    display-[grid] grid-template-columns-[1fr] row-gap-[2mm]
+                    "></ul>
+                </section>
+            </section>
+        </section>
+
+    </main>
+
+</template>
