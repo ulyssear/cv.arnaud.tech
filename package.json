@@ -1,0 +1,24 @@
+{
+  "name": "cv.arnaud.tech",
+  "version": "0.0.1",
+  "description": "Ulysse ARNAUD's CV",
+  "main": "",
+  "private": "true",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "fastish --output_dir=dist index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ulyssear/cv.arnaud.tech.git"
+  },
+  "author": "Ulysse ARNAUD",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ulyssear/cv.arnaud.tech/issues"
+  },
+  "dependencies": {
+    "fastish": "file:../fastish"
+  }, 
+  "homepage": "https://github.com/ulyssear/cv.arnaud.tech#readme"
+}
