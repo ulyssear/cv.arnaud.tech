@@ -24,20 +24,27 @@
             display:block;
             content:'';
         }
-	ul > li::before {
-	    content: '>';
-	    position: absolute;
-	    left: -1rem;
-	}
-	@page {
-	    margin: 0;
-	    padding: 0;
-	}
-    @media screen and (max-width: 600px) and (orientation: portrait) {
-        body {
-            place-content: start!important;
+        ul > li::before {
+            content: '>';
+            position: absolute;
+            left: -1rem;
         }
-    }
+        @page {
+            margin: 0;
+            padding: 0;
+
+            button {
+                padding: 0;
+            }
+        }
+        @media screen and (max-width: 600px) and (orientation: portrait) {
+            body {
+                place-content: start!important;
+            }
+            button {
+                min-height: 48px;
+            }
+        }
     </style>
 </head>
 <body class="
@@ -85,7 +92,7 @@ font-size-[.9rem]
         [> div]:{display-[grid] place-content-[space-between] grid-template-rows-[auto 1fr] gap-[1.2rem]}
         [> div > p]:{font-weight-[bold] text-transform-[uppercase] letter-spacing-[-.02rem] font-size-[130%]}
         [> div > ul]:{display-[grid] justify-content-[space-between]}
-        [button]:{width-[100%] cursor-[pointer]}
+        [button]:{width-[100%] cursor-[pointer] padding-[.5rem]}
         ">
             <!-- Avatar header -->
             <div class="gap-[0]">
