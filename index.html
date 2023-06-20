@@ -18,23 +18,23 @@
         }
         main > div > div > div > p:first-child::after,
         main > div:first-child > div:not(:first-child, :nth-child(2)) > p:first-child::after {
-            background:var(--primary);
-            width:3rem;
-            height:3px;
-            display:block;
-            content:'';
+            background:var(--primary)!important;
+            width:3rem!important;
+            height:3px!important;
+            display:block!important;
+            content:''!important;
         }
         ul > li::before {
-            content: '>';
-            position: absolute;
+            content: '>'!important;
+            position: absolute!important;
             left: -1rem;
         }
         @page {
-            margin: 0;
-            padding: 0;
+            margin: 0!important;
+            padding: 0!important;
 
             button {
-                padding: 0;
+                padding: 0!important;
             }
         }
         @media screen and (max-width: 600px) and (orientation: portrait) {
@@ -42,7 +42,7 @@
                 place-content: start!important;
             }
             button {
-                min-height: 48px;
+                min-height: 48px!important;
             }
         }
     </style>
