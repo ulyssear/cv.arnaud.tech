@@ -46,6 +46,10 @@
             button {
                 padding: 0!important;
             }
+
+            body > main > div:nth-child(2) > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) {
+                grid-column: 1/3!important;
+            }
         }
         @media screen and (max-width: 600px) and (orientation: portrait) {
             body {
@@ -84,7 +88,7 @@
 display-[grid] place-content-[center]
 font-family-[sans-serif]
 
-font-size-[.9rem]
+font-size-[.85rem]
 ">
     <main class="
     // width-[var(--width)] height-[var(--height)]
@@ -101,7 +105,7 @@ font-size-[.9rem]
         padding-block-[1.3rem] padding-inline-[var(--padding-inline)]
         [> div]:{display-[grid] place-content-[space-between] grid-template-rows-[auto 1fr] gap-[1.2rem]}
         [> div > p]:{font-weight-[bold] text-transform-[uppercase] letter-spacing-[-.02rem] font-size-[130%]}
-        [> div > ul]:{display-[grid] justify-content-[space-between]}
+        [> div > ul]:{display-[flex] justify-content-[flerx-start] flex-direction-[column] row-gap-[.5rem] font-size-[90%]}
         [button]:{width-[100%] cursor-[pointer] padding-[.5rem]}
         ">
             
@@ -114,26 +118,13 @@ font-size-[.9rem]
             
             <div class="gap-[1rem]">
                 <p class="font-size-[200%] line-height-[.9]">Ulysse<br>ARNAUD</p>
-                <p class="font-size-[unset] color-[var(--primary-light)]">Administrateur<br>système et réseau</p>
-                <nav class="
-		display-[grid] grid-template-columns-[1fr] row-gap-[.3rem]
-                ">
-                    <a href="https://ulysse.arnaud.tech">
-                        <button type="button">ulysse.arnaud.tech</button>
-                    </a>
-                    <a href="https://github.com/ulyssear">
-                        <button type="button">GitHub : ulyssear</button>
-                    </a>
-                </nav>
+                <p class="font-size-[unset] color-[var(--primary-light)]">Chef de projet IT</p>
             </div>
 
             
             <div>
                 <p>Contact</p>
                 <ul>
-                    <li>
-                        <p>07.67.39.26.99</p>
-                    </li>
                     <li>
                         <p>
                             <a href="mailto:ulysse@arnaud.tech">ulysse@arnaud.tech</a>
@@ -147,19 +138,22 @@ font-size-[.9rem]
 
             
             <div>
-                <p>Languages</p>
+                <p>Langues</p>
                 <ul class="
                 [> li > p]:{display-[grid] grid-template-columns-[repeat(2,1fr)] column-gap-[.5rem] grid-auto-flow-[column]}
                 [> li > p > span]:{font-weight-[bold]}
                 ">
                     <li>
-                        <p><span>French:</span> Native</p>
+                        <p><span>Français:</span> Natale</p>
                     </li>
                     <li>
-                        <p><span>English:</span> B2/C1</p>
+                        <p><span>Anglais:</span> Profesionnel</p>
                     </li>
                     <li>
-                        <p><span>Spanish:</span> A2</p>
+                        <p><span>Espagnol:</span> Scolaire</p>
+                    </li>
+                    <li>
+                        <p><span>Polonais:</span> Débutant</p>
                     </li>
                 </ul>
             </div>
@@ -186,7 +180,7 @@ font-size-[.9rem]
                     padding-[1rem] line-height-[1.2] font-weight-[500]
                     font-size-[90%] border-radius-[.5rem] filter-[var(--shadow)]
                     ">
-                    Je développe des produits numériques performants depuis 7 ans, en veillant à améliorer l'expérience utilisateur. Ayant été impliqué dans des transformations numériques et des projets innovants en tant que développeur web fullstack, je suis maintenant à la recherche de nouveaux défis et souhaite acquérir de nouvelles compétences dans le domaine de la cybersécurité.
+                    Passionné d'informatique depuis toujours, avec la programmation web comme porte d'entrée dans le monde professionnel, l’orientation vers la sécurité informatique s’est faite après un passage par le système et les réseaux. Des compétences techniques et en gestion de projet ont été acquises, m'ouvrant la voie à de nouveaux défis.
                     </div>
                 </div>
                 
@@ -236,7 +230,7 @@ font-size-[.9rem]
                                 </div>
                             </div>
                             <p>Administrateur de systèmes informatiques et d'information</p>
-                            <p>Fullstack development & DevOps</p>
+                            <p>Dev. FullStack & DevOps</p>
                             <p>IPSSI, Paris, France</p>
                         </div>
                         
@@ -257,16 +251,8 @@ font-size-[.9rem]
                     <p>Hobbies</p>
                     
                     <div>
-                        <p>Contributeur open source</p>
-                        <p>
-                            <a href="https://github.com/pcottle/learnGitBranching">learngitbranching</a>, 
-                            <a href="https://github.com/codethesaurus/codethesaur.us">codethesaur.us</a>
-                        </p>
-                    </div>
-                    
-                    <div>
                         <p>Expériences internationales</p>
-                        <p>8 ans aux Émirats arabes unis, voyage au Sri Lanka, à Oman, en Grande-Bretagne, en Irlande, en Espagne.</p>
+                        <p>8 ans aux Émirats arabes unis, voyage au Sri Lanka, Oman, Grande-Bretagne, Irlande, Espagne, Autriche, Pologne, Slovaquie.</p>
                     </div>
 		    
 		    <div>
@@ -292,6 +278,45 @@ font-size-[.9rem]
                 [> div]:{filter-[var(--shadow)] padding-[.5rem] border-radius-[.5rem] background-[white] padding-[.5rem]}
                 ">
                     <p class="grid-column-[1/3]">Expertise</p>
+                    <div>
+                        <div>
+                            <p>DSI Services</p>
+                            <p>(FR, Clamart)</p>
+                        </div>
+                        <p>Assistant chef de projet</p>
+                        <p>CDD: 01/2024 - en cours</p>
+                        <div>
+                            <p>Chef de projet consultant – Ergalis/Leader</p>
+                            <ul>
+                                <li>
+                                    <p>Gestion des mouvements d'agences interim Ergalis et Leader</p>
+                                    <ul>
+                                        <li>Suivi des mouvements d'agences (fermetures, ouvertures, déménagements)</li>
+                                        <li>Suivi des portabilités</li>
+                                        <li>Suivi des résiliations et restitutions d'équipements</li>
+                                        <li>Opération : Installation de téléphones fixes</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <p>Gestion des projets de la téléphonie d'Ergalis (Bouygues, Mitel)</p>
+                                    <ul>
+                                        <li>Mise en place des répondeurs pour : accueil, attente, lignes occupées, agence fermée</li>
+                                        <li>Mise en place d'une ligne d'astreinte pour Ergalis Médical</li>
+                                        <li>Opération : Assignation de calendriers spécifiques pour les agences</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <p>Support pour la téléphonie de Leader Group (Orange, Webex)</p>
+                                    <ul>
+                                        <li>Interception des appels d'une agence</li>
+                                        <li>Transfert téléphonique</li>
+                                        <li>Assignation de lignes directes</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    
                     <div>
                         <div>
                             <p>DSI Services</p>
@@ -396,32 +421,11 @@ font-size-[.9rem]
                     </div>
                     
                     <div>
-                        <p>Robots</p>
-                        <p>
-                            <a href="#">Puppeteer</a>,
-                            <a href="#">Playwright</a>,
-                            <a href="#">Selenium</a>,
-                            <a href="#">Beautifulsoup</a>
-                        </p>
-                    </div>
-                    
-                    <div>
-                        <p>Frameworks frontend</p>
+                        <p>Frameworks</p>
                         <p>
                             <a href="#">Angular</a>,
-                            <a href="#">AngularJS</a>,
-                            <a href="#">ReactJS</a>,
-                            <a href="#">React Native</a>,
-                            <a href="#">Vue</a>,
-                            <a href="#">Electron</a>,
-                            <a href="#">Ionic</a>,
-                            <a href="#">Flutter</a>
-                        </p>
-                    </div>
-                    
-                    <div>
-                        <p>Frameworks backend</p>
-                        <p>
+                            <a href="#">React</a>,
+                            <a href="#">VueJS</a>,
                             <a href="#">Laravel</a>,
                             <a href="#">Symfony</a>,
                             <a href="#">Express</a>,
@@ -431,40 +435,17 @@ font-size-[.9rem]
                     </div>
                     
                     <div>
-                        <p>Langages web</p>
+                        <p>Langages</p>
                         <p>
-                            <a href="#">HTML</a>,
-                            <a href="#">CSS</a>,
-                            <a href="#">SCSS/SASS</a>,
-                            <a href="#">LESS</a>,
+                            <a href="#">HTML/CSS</a>,
                             <a href="#">Javascript</a>,
-                            <a href="#">Typescript</a>,
                             <a href="#">PHP</a>,
                             <a href="#">Python</a>,
                             <a href="#">SQL</a>,
-                            <a href="#">MySQL</a>,
-                            <a href="#">PostgreSQL</a>,
-                            <a href="#">MongoDB</a>
-                        </p>
-                    </div>
-                    
-                    <div>
-                        <p>Langages script</p>
-                        <p>
                             <a href="#">Bash</a>,
-                            <a href="#">MS Batch</a>,
-                            <a href="#">Powershell</a>
-                        </p>
-                    </div>
-                    
-                    <div>
-                        <p>Autres langages</p>
-                        <p>
+                            <a href="#">Powershell</a>,
                             <a href="#">C</a>,
-                            <a href="#">Go</a>,
-                            <a href="#">Java</a>,
-                            <a href="#">Kotlin</a>,
-                            <a href="#">Dart</a>
+                            <a href="#">Java</a>
                         </p>
                     </div>
                     
@@ -473,9 +454,8 @@ font-size-[.9rem]
                         <p>
                             <a href="#">Ingénieurie inversée</a>,
                             <a href="#">Réseaux</a>,
-                            <a href="#">Securité (Web)</a>,
-                            <a href="#">AWS</a>,
-                            <a href="#">Azure</a>
+                            <a href="#">Securité Web</a>,
+                            <a href="#">Cloud (AWS)</a>
                         </p>
                     </div>
                 </div>
