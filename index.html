@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" aria-busy="true" class="
+font-size-[140%]
 [current,body,p,ul,li]:{margin-[0] padding-[0]}
 [ul]:{list-style-[none]}
 [ul > li]:{margin-left-[1rem] position-[relative]}
@@ -43,6 +44,9 @@
             padding: 0!important;
         }
         @media print {
+            html {
+                font-size: 100%!important;
+            }
             button {
                 padding: 0!important;
             }
@@ -88,7 +92,7 @@
 display-[grid] place-content-[center]
 font-family-[sans-serif]
 
-font-size-[.85rem]
+font-size-[.875rem]
 ">
     <main class="
     // width-[var(--width)] height-[var(--height)]
@@ -103,7 +107,7 @@ font-size-[.85rem]
         background-[var(--primary-dark)] color-[var(--white)]
         display-[grid] grid-template-columns-[auto auto repeat(2,1fr)] gap-[2.7rem]
         padding-block-[1.3rem] padding-inline-[var(--padding-inline)]
-        [> div]:{display-[grid] place-content-[space-between] grid-template-rows-[auto 1fr] gap-[1.2rem]}
+        [> div]:{display-[grid] place-content-[space-between] grid-template-rows-[auto 1fr] gap-[.8rem]}
         [> div > p]:{font-weight-[bold] text-transform-[uppercase] letter-spacing-[-.02rem] font-size-[130%]}
         [> div > ul]:{display-[flex] justify-content-[flerx-start] flex-direction-[column] row-gap-[.5rem] font-size-[90%]}
         [button]:{width-[100%] cursor-[pointer] padding-[.5rem]}
@@ -167,7 +171,7 @@ font-size-[.85rem]
         [> div > div > p:first-child]:{font-weight-[bold] margin-bottom-[0rem] font-size-[130%] text-transform-[uppercase] letter-spacing-[-.05rem]}
         [> div]:{display-[grid] grid-template-columns-[1fr] grid-template-rows-[repeat(3,max-content)] gap-[.5rem]}
         [> div > div:last-child]:{display-[grid] gap-[.5rem]}
-        [> div > div:last-child > div]:{background-[lightgrey] border-radius-[.4rem] padding-[.8rem] display-[grid] grid-template-rows-[auto 1fr] gap-[.5rem] font-size-[80%]}
+        [> div > div:last-child > div]:{background-[lightgrey] border-radius-[.4rem] padding-[.8rem] display-[grid] grid-template-rows-[auto 1fr] gap-[.3rem] font-size-[80%]}
         [> div > div:last-child > div > p:first-child]:{font-weight-[bold]}
         ">
             
@@ -180,7 +184,7 @@ font-size-[.85rem]
                     padding-[1rem] line-height-[1.2] font-weight-[500]
                     font-size-[90%] border-radius-[.5rem] filter-[var(--shadow)]
                     ">
-                    Passionné d'informatique depuis toujours, avec la programmation web comme porte d'entrée dans le monde professionnel, l’orientation vers la sécurité informatique s’est faite après un passage par le système et les réseaux. Des compétences techniques et en gestion de projet ont été acquises, m'ouvrant la voie à de nouveaux défis.
+                    Passionné d'informatique, avec la programmation web comme porte d'entrée. L’apprentissage de la sécurité informatique, les systèmes et les réseaux s’est faite selon les besoins professionnels. Des compétences techniques et en gestion de projet ont été acquises, m'ouvrant la voie à de nouveaux défis.
                     </div>
                 </div>
                 
@@ -281,7 +285,7 @@ font-size-[.85rem]
                     <div>
                         <div>
                             <p>DSI Services</p>
-                            <p>(FR, Clamart)</p>
+                            <p>(FR, Clamart, Paris, Puteaux)</p>
                         </div>
                         <p>Assistant chef de projet</p>
                         <p>CDD: 01/2024 - en cours</p>
