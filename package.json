@@ -2,11 +2,12 @@
   "name": "cv.arnaud.tech",
   "version": "0.0.1",
   "description": "Ulysse ARNAUD's CV",
-  "main": "",
+  "main": "build/index.html",
   "private": "true",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "fastish --output_dir=dist index.html"
+    "compress": "node scripts/compress.js",
+    "build": "node scripts/build.js"
   },
   "repository": {
     "type": "git",
@@ -18,7 +19,6 @@
     "url": "https://github.com/ulyssear/cv.arnaud.tech/issues"
   },
   "dependencies": {
-    "fastish": "file:../fastish"
-  }, 
+  },
   "homepage": "https://github.com/ulyssear/cv.arnaud.tech#readme"
 }
