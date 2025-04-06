@@ -8,12 +8,13 @@ font-size-[140%]
 [a]:{text-decoration-[none] color-[inherit]}
 // [@page]:{margin-[0!important] padding-[0!important]}
 ">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Ulysse ARNAUD's CV">
     <title>CV Ulysse ARNAUD</title>
-    
+
     <link rel="icon" type="image/png" href="/img/favicon.img/favicon-96x96.png" sizes="96x96">
     <link rel="icon" type="image/svg+xml" href="/img/favicon.img/favicon.svg">
     <link rel="shortcut icon" href="/img/favicon.img/favicon.ico">
@@ -24,53 +25,65 @@ font-size-[140%]
     <meta name="msapplication-TileColor" content>
     <meta name="theme-color" content>
 
-    <script src="https://cdn.jsdelivr.net/gh/ulyssear/css-in-js-in-html@0.3.13/build/index.min.js" loading="eager"></script>
+    <script src="https://cdn.jsdelivr.net/gh/ulyssear/css-in-js-in-html@0.3.13/build/index.min.js"
+        loading="eager"></script>
     <style>
-        html[aria-busy="true"], [hidden]:not([hidden="false"]) {
-            display:none!important;
+        html[aria-busy="true"],
+        [hidden]:not([hidden="false"]) {
+            display: none !important;
         }
-        main > div > div > div > p:first-child::after,
-        main > div:first-child > div:not(:first-child, :nth-child(2)) > p:first-child::after {
-            background:var(--primary)!important;
-            width:3rem!important;
-            height:3px!important;
-            display:block!important;
-            content:''!important;
+
+        main>div>div>div>p:first-child::after,
+        main>div:first-child>div:not(:first-child, :nth-child(2))>p:first-child::after {
+            background: var(--primary) !important;
+            width: 3rem !important;
+            height: 3px !important;
+            display: block !important;
+            content: '' !important;
         }
-        ul > li::before {
-            content: '>'!important;
-            position: absolute!important;
+
+        ul>li::before {
+            content: '>' !important;
+            position: absolute !important;
             left: -1rem;
         }
+
         @page {
-            margin: 0!important;
-            padding: 0!important;
+            margin: 0 !important;
+            padding: 0 !important;
         }
+
         @media print {
             html {
-                font-size: 100%!important;
+                font-size: 100% !important;
             }
+
             button {
-                padding: 0!important;
+                padding: 0 !important;
             }
+
             body {
                 width: var(--width);
                 height: var(--height);
             }
-            body > main > div:nth-child(2) > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) {
-                grid-column: 1/3!important;
+
+            body>main>div:nth-child(2)>div:nth-child(2)>div:nth-child(1)>div:nth-child(2) {
+                grid-column: 1/3 !important;
             }
         }
+
         @media screen and (max-width: 600px) and (orientation: portrait) {
             body {
-                place-content: start!important;
+                place-content: start !important;
             }
+
             button {
-                min-height: 48px!important;
+                min-height: 48px !important;
             }
         }
     </style>
 </head>
+
 <body class="
 --black-[#2D3333]
 --primary-[#0077B6]
@@ -108,7 +121,7 @@ font-size-[.875rem]
     filter-[var(--shadow-2xl)]
     border-[1px solid #0002] border-top-[0]
     ">
-        
+
         <div class="
         background-[var(--primary-dark)] color-[var(--white)]
         display-[grid] grid-template-columns-[auto auto repeat(2,1fr)] gap-[2.7rem]
@@ -118,20 +131,22 @@ font-size-[.875rem]
         [> div > ul]:{display-[flex] justify-content-[flerx-start] flex-direction-[column] row-gap-[.5rem] font-size-[90%]}
         [button]:{width-[100%] cursor-[pointer] padding-[.5rem]}
         ">
-            
+
             <div class="gap-[0]">
-                <picture class="position-[relative] aspect-ratio-[1/1] overflow-[hidden] width-[8rem] height-[100%] display-[block] border-radius-[50%]">
-                    <img src="img/avatar.webp" alt="Avatar" class="width-[inherit] height-[inherit] object-fit-[cover] transform-[scaleX(-1)] aspect-ratio-[inherit] display-[inherit]">
+                <picture
+                    class="position-[relative] aspect-ratio-[1/1] overflow-[hidden] width-[8rem] height-[100%] display-[block] border-radius-[50%]">
+                    <img src="img/avatar.webp" alt="Avatar"
+                        class="width-[inherit] height-[inherit] object-fit-[cover] transform-[scaleX(-1)] aspect-ratio-[inherit] display-[inherit]">
                 </picture>
             </div>
 
-            
+
             <div class="gap-[1rem]">
                 <p class="font-size-[200%] line-height-[.9]">Ulysse<br>ARNAUD</p>
                 <p class="font-size-[unset] color-[var(--primary-light)]">Chef de projet IT</p>
             </div>
 
-            
+
             <div>
                 <p>Contact</p>
                 <ul>
@@ -149,7 +164,7 @@ font-size-[.875rem]
                 </ul>
             </div>
 
-            
+
             <div>
                 <p>Langues</p>
                 <ul class="
@@ -172,7 +187,7 @@ font-size-[.875rem]
             </div>
         </div>
 
-        
+
         <div class="
         display-[grid] grid-template-columns-[1.5fr 3fr] column-gap-[.5rem]
         padding-inline-[var(--padding-inline)] padding-block-[.6rem]
@@ -184,9 +199,9 @@ font-size-[.875rem]
         [> div > div:last-child > div]:{background-[lightgrey] border-radius-[.4rem] padding-[.8rem] display-[grid] grid-template-rows-[auto 1fr] gap-[.3rem] font-size-[80%]}
         [> div > div:last-child > div > p:first-child]:{font-weight-[bold]}
         ">
-            
+
             <div>
-                
+
                 <div>
                     <p>Profil</p>
                     <div class="
@@ -194,13 +209,16 @@ font-size-[.875rem]
                     padding-[1rem] line-height-[1.2] font-weight-[500]
                     font-size-[90%] border-radius-[.5rem] filter-[var(--shadow)]
                     ">
-                    Passionné par l’informatique depuis toujours avec la programmation web comme une porte d'entrée dans la vie professionnelle. L’apprentissage de la sécurité informatique, des systèmes et des réseaux s'est fait selon les besoins professionnels. Des compétences techniques [dans les systèmes, réseaux et sécurité informatique] et en gestion de projet ont été acquises, m'ouvrant la voie à de nouveaux défis.
+                        Apprès avoir commencé tôt la programmation web, j'ai eu ensuite l'opportunité de devenir
+                        développeur fullstack profesionnel. Aujourd'hui, mes connaissances vont de la gestion de projet,
+                        à la sécurité informatique, aux systèmes et réseaux. C'est ainsi que je sens prêt à relever de
+                        nouveaux défis.
                     </div>
                 </div>
-                
+
                 <div>
                     <p>Formations</p>
-                    
+
                     <div class="
                     display-[grid] grid-template-columns-[1fr] row-gap-[1rem]
                     [> div]:{display-[grid] row-gap-[.1rem] filter-[var(--shadow)] background-[white] padding-[.5rem] border-radius-[.5rem]}
@@ -211,7 +229,7 @@ font-size-[.875rem]
                     [> div > p:last-of-type]:{font-weight-[bold] color-[var(--primary)] font-size-[80%]}
 		    [> div > div > div > p:last-child]:{font-size-[80%]}
                     ">
-                        
+
                         <div>
                             <div>
                                 <div>
@@ -223,7 +241,7 @@ font-size-[.875rem]
                             <p>Cybersecurité</p>
                             <p>IPSSI, Paris, France</p>
                         </div>
-                        
+
                         <div>
                             <div>
                                 <div>
@@ -235,7 +253,7 @@ font-size-[.875rem]
                             <p>Architecte Big Data</p>
                             <p>IPSSI, Paris, France</p>
                         </div>
-                        
+
                         <div>
                             <div>
                                 <div>
@@ -247,7 +265,7 @@ font-size-[.875rem]
                             <p>Dev. FullStack & DevOps</p>
                             <p>IPSSI, Paris, France</p>
                         </div>
-                        
+
                         <div>
                             <div>
                                 <div>
@@ -260,24 +278,22 @@ font-size-[.875rem]
                         </div>
                     </div>
                 </div>
-                
-                <div>
-                    <p>Hobbies</p>
-                    
-                    <div>
-                        <p>Expériences internationales</p>
-                        <p>8 ans aux Émirats arabes unis, voyage au Sri Lanka, Oman, Grande-Bretagne, Irlande, Espagne, Autriche, Pologne, Slovaquie.</p>
-                    </div>
-		    
-		    <div>
-			    <p>Autres hobbies</p>
-			    <p>Jouer du piano (Yamaha P-140), lire des livres</p>
-		    </div>
-                </div>
+
+                <aside class="
+                height-[16rem] display-[grid] place-content-[center] place-items-[center] font-size-[100%]
+                line-height-[1.2] font-weight-[500] text-align-[center]
+                ">
+                    <img src="img/qrcode.webp" alt="cv.arnaud.tech" class="height-[8rem] width-[8rem] display-[block]">
+                    <p>CV accessible depuis
+                        <br />
+                        <a class="color-[var(--primary)] font-weight-[bold]"
+                            href="https://cv.arnaud.tech">cv.arnaud.tech</a>
+                    </p>
+                </aside>
             </div>
-            
+
             <div>
-                
+
                 <div class="
                 display-[grid] grid-template-columns-[repeat(2,1fr)] gap-[.5rem]
                 [> div > div:first-child]:{display-[grid] grid-template-columns-[repeat(2,max-content)] gap-[.8rem]}
@@ -300,7 +316,7 @@ font-size-[.875rem]
                         <p>Assistant chef de projet</p>
                         <p>CDD: 01/2024 - en cours</p>
                         <div>
-                            <p>Chef de projet consultant – Ergalis/Leader</p>
+                            <p>Chef de projet consultant – Ergalis/Actual/Leader</p>
                             <ul>
                                 <li>
                                     <p>Gestion des mouvements d'agences interim Ergalis et Leader</p>
@@ -308,30 +324,33 @@ font-size-[.875rem]
                                         <li>Suivi des mouvements d'agences (fermetures, ouvertures, déménagements)</li>
                                         <li>Suivi des portabilités</li>
                                         <li>Suivi des résiliations et restitutions d'équipements</li>
-                                        <li>Accompagnement sur : support téléphonique et supervision des boitiers SDWAN (Versa Networks)</li>
+                                        <li>Accompagnement sur : support téléphonique et supervision des boitiers SDWAN
+                                            (Versa Networks et Fortimanager)</li>
                                         <li>Opération : Installation de téléphones fixes</li>
                                     </ul>
                                 </li>
                                 <li>
                                     <p>Gestion des projets de la téléphonie d'Ergalis (Bouygues, Mitel)</p>
                                     <ul>
-                                        <li>Mise en place des répondeurs pour : accueil, attente, lignes occupées, agence fermée</li>
-                                        <li>Mise en place d'une ligne directe pour l'astreinte d'Ergalis Médical</li>
-                                        <li>Opération : Assignation de calendriers spécifiques pour les agences</li>
+                                        <li>Mise en place des répondeurs pour : accueil, attente, lignes occupées,
+                                            agence fermée</li>
+                                        <li>Affectations de lignes directes, création de groupes d'appels</li>
+                                        <li>Opération : Assignation de calendriers pour les agences, transfert de lignes
+                                        </li>
                                     </ul>
                                 </li>
                                 <li>
                                     <p>Support pour la téléphonie de Leader Group (Orange, Webex)</p>
                                     <ul>
-                                        <li>Interception des appels d'une agence</li>
                                         <li>Transferts d'appel</li>
-                                        <li>Assignation de lignes directes</li>
+                                        <li>Assignation de lignes directes aux collaborateurs</li>
+                                        <li>Ajout des collaborateurs sur les files d'attente</li>
                                     </ul>
                                 </li>
                             </ul>
                         </div>
                     </div>
-                    
+
                     <div>
                         <div>
                             <p>DSI Services</p>
@@ -342,14 +361,15 @@ font-size-[.875rem]
                         <div>
                             <p>Administrateur système et réseau</p>
                             <ul>
-                                <li>Participation : Migration d'Active Directory, Installation de Microsoft Office 365 dans un parc informatique, Migration DNS.</li>
+                                <li>Participation : Migration d'Active Directory, Installation de Microsoft Office 365
+                                    dans un parc informatique, Migration DNS.</li>
                                 <li>Support téléphonique</li>
                                 <li>Projet d'accompagnement pour la mise en place d'un nouveau site web</li>
                                 <li>Création d'une campagne de phishing</li>
                             </ul>
                         </div>
                     </div>
-                    
+
                     <div>
                         <div>
                             <p>Liigem</p>
@@ -365,8 +385,8 @@ font-size-[.875rem]
                                 <li>Création d'applications mobiles</li>
                             </ul>
                         </div>
-                    </div>                    
-                    
+                    </div>
+
                     <div>
                         <div>
                             <p>Pharmodel</p>
@@ -393,8 +413,8 @@ font-size-[.875rem]
                                 <li>Ajout d'un nouveau type d'affiche (flyers) pour l'outil de création d'affiches</li>
                             </ul>
                         </div>
-                    </div>                    
-                    
+                    </div>
+
                     <div>
                         <div>
                             <p>NZUP</p>
@@ -414,14 +434,14 @@ font-size-[.875rem]
                                 <li>Correction et développement d'une application</li>
                             </ul>
                         </div>
-                    </div>                    
+                    </div>
                 </div>
-                
+
                 <div class="
                 grid-template-columns-[repeat(2,1fr)]
                 ">
                     <p class="grid-column-[1/3]">Compétences</p>
-                    
+
                     <div>
                         <p>Environnements</p>
                         <p>
@@ -432,7 +452,7 @@ font-size-[.875rem]
                             <a href="#">Windows</a>
                         </p>
                     </div>
-                    
+
                     <div>
                         <p>Frameworks</p>
                         <p>
@@ -446,7 +466,7 @@ font-size-[.875rem]
                             <a href="#">Flask</a>
                         </p>
                     </div>
-                    
+
                     <div>
                         <p>Langages de programmation</p>
                         <p>
@@ -461,7 +481,7 @@ font-size-[.875rem]
                             <a href="#">Java</a>
                         </p>
                     </div>
-                    
+
                     <div>
                         <p>Autres compétences</p>
                         <p>
@@ -476,4 +496,5 @@ font-size-[.875rem]
         </div>
     </main>
 </body>
+
 </html>
