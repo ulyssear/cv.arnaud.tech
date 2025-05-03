@@ -1,0 +1,23 @@
+{
+  "name": "cv.arnaud.tech",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/ulyssear/cv.arnaud.tech#readme",
+  "private": true,
+  "bugs": {
+    "url": "https://github.com/ulyssear/cv.arnaud.tech/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ulyssear/cv.arnaud.tech.git"
+  },
+  "license": "ISC",
+  "author": "Ulysse ARNAUD",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "minify": "node scripts/minify.js && node scripts/compress.js"
+  },
+  "dependencies": {
+    "@ulyssear/css-in-js-in-html": "^0.4.0"
+  }
+}
