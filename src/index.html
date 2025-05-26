@@ -183,10 +183,10 @@ font-size-[.875rem]
         padding-inline-[var(--padding-inline)] padding-block-[.6rem]
         [> div > div]:{display-[grid] gap-[.5rem]}
         [> div > div > p:first-child]:{font-weight-[bold] margin-bottom-[0rem] font-size-[130%] text-transform-[uppercase] letter-spacing-[-.05rem]}
-        [> div:last-child]:{display-[flex] flex-direction-[column] row-gap-[.8rem] justify-content-[space-between]}
+        [> div:last-child]:{display-[grid] row-gap-[.8rem] justify-content-[space-between] grid-template-columns-[repeat(2,1fr)]}
         [> div:first-child]:{display-[flex] flex-direction-[column] justify-content-[space-between]}
         [> div > div:last-child]:{display-[grid] gap-[.5rem]}
-        [> div > div:last-child > div]:{background-[lightgrey] border-radius-[.4rem] padding-[.8rem] display-[grid] grid-template-rows-[auto 1fr] gap-[.3rem] font-size-[80%]}
+        [> div > div:last-child > div]:{background-[lightgrey] border-radius-[.4rem] padding-[.8rem] display-[grid] grid-template-rows-[auto 1fr] gap-[.3rem]}
         [> div > div:last-child > div > p:first-child]:{font-weight-[bold]}
         ">
 
@@ -293,16 +293,16 @@ font-size-[.875rem]
                 </aside>
             </div>
 
-            <div class="justify-content-[start] gap-[4rem]">
+            <div class="justify-content-[start] gap-[1rem]">
 
                 <div class="
-                display-[grid] grid-template-columns-[repeat(2,1fr)] gap-[.5rem]
+                display-[grid] grid-template-columns-[repeat(2,1fr)] gap-[.5rem] grid-column-[1 / span 2]
                 [> div > div:first-child]:{display-[grid] grid-template-columns-[repeat(2,max-content)] gap-[.8rem]}
                 [> div > div:first-child > p:first-child]:{font-weight-[bold]}
                 [> div > p:first-of-type]:{font-weight-[bold] text-transform-[uppercase] letter-spacing-[-.05rem] color-[var(--primary)] font-size-[80%]}
                 [> div > p:last-of-type]:{font-size-[75%] font-style-[italic]}
                 [> div > div > p:first-child]:{font-weight-[bold] text-transform-[uppercase] letter-spacing-[-.03rem]}
-		[> div > div > p:last-child]:{font-size-[80%]}
+		        [> div > div > p:last-child]:{font-size-[80%]}
                 [> div > div:not(:first-child) > p:first-child]:{font-size-[80%]}
                 [> div > p + div]:{margin-top-[.5rem]}
                 [> div > div:not(:first-child)]:{display-[grid] gap-[0rem] margin-top-[.5rem]}
@@ -315,7 +315,7 @@ font-size-[.875rem]
                             <p>(FR, Clamart, Paris, Puteaux)</p>
                         </div>
                         <p>Assistant chef de projet systèmes et réseaux</p>
-                        <p>CDD: 01/2024 - en cours</p>
+                        <p>CDD: 01/2024 - 06/2025 (1 an, 6 mois)</p>
                         <div>
                             <p>Chef de projet consultant – Ergalis/Actual/Leader</p>
                             <ul>
@@ -329,7 +329,7 @@ font-size-[.875rem]
                                     <p>Formations pour les internes et infogéreur</p>
                                 </li>
                                 <li>
-                                    <p>Gestion de tickets de production pour : lenteurs/coupures réseaux et téléphonie</p>
+                                    <p>Support technique : lenteurs/coupures réseaux et téléphonie</p>
                                 </li>
                             </ul>
                         </div>
@@ -426,9 +426,9 @@ font-size-[.875rem]
                 </div>
 
                 <div class="
-                grid-template-columns-[repeat(2,1fr)]
+                display-[flex] flex-direction-[column]
                 ">
-                    <p class="grid-column-[1/3]">Compétences</p>
+                    <p>Compétences</p>
 
                     <div>
                         <p>Environnements</p>
@@ -477,6 +477,40 @@ font-size-[.875rem]
                             <a href="#">Réseaux</a>,
                             <a href="#">Securité Web</a>,
                             <a href="#">Cloud (AWS)</a>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="
+                display-[flex] flex-direction-[column]
+                ">
+                    <p>Bénévolat</p>
+
+                    <div>
+                        <p>Chef de projet IT</p>
+                        <p>
+                            <a href="#">Theirmemory (depuis mai 2025)</a>
+                        </p>
+                    </div>
+
+                    <div>
+                        <p>Professeur</p>
+                        <p>
+                            <a href="#">Konexio (début à partir de juin 2025)</a>
+                        </p>
+                    </div>
+
+                    <div>
+                        <p>Collecte alimentaire</p>
+                        <p>
+                            <a href="#">Mie de pain (depuis mai 2025)</a>
+                        </p>
+                    </div>
+
+                    <div>
+                        <p>Jardinage</p>
+                        <p>
+                            <a href="#">V'île fertile (depuis mai 2025)</a>
                         </p>
                     </div>
                 </div>
